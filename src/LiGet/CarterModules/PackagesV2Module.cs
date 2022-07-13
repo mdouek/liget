@@ -41,7 +41,7 @@ namespace LiGet.CarterModules
             this._packageService = packageService;
             this._storage = storage;
             this._log = logger;
-            this.GetCompat("/api/v2/contents/{id}/{version}", async (req, res, routeData) => {
+            this.GetCompat("/api/v2/package/{id}/{version}", async (req, res, routeData) => {
                 string id = routeData.As<string>("id");
                 string version = routeData.As<string>("version");
 
