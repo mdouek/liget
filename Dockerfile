@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.1.4-aspnetcore-runtime-stretch-slim
+FROM mcr.microsoft.com/dotnet/aspnet:2.1-stretch-slim
 EXPOSE 9011
 
 RUN apt-get update && apt-get install -y sudo wget moreutils &&\
